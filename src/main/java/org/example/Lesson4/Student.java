@@ -8,6 +8,10 @@ public class Student {
     double economEverageRating;
     double mathEverageRating;
     double languageEverageRating;
+    public double avarageGradeCalculating( Student student){
+        double avarageGrade = (student.economEverageRating + student.mathEverageRating + student.languageEverageRating)/3;
+        return avarageGrade;
+    }
 }
 class StudentTest{
     public static void main(String[] args) {
@@ -42,5 +46,9 @@ class StudentTest{
         System.out.println("Средняя арифметическая оценка " + student1.name + " " + student1.surname + " = " + (student1.economEverageRating + student1.mathEverageRating + student1.languageEverageRating)/3);
         System.out.println("Средняя арифметическая оценка " + student2.name + " " + student2.surname + " = " + (student2.economEverageRating + student2.mathEverageRating + student2.languageEverageRating)/3);
         System.out.println("Средняя арифметическая оценка " + student3.name + " " + student3.surname + " = " + (student3.economEverageRating + student3.mathEverageRating + student3.languageEverageRating)/3);
+
+        System.out.println("Средняя арифметическая оценка " + student1.avarageGradeCalculating(student1));
+        System.out.println("Средняя арифметическая оценка " + student2.avarageGradeCalculating(student2));
+        System.out.println("Средняя арифметическая оценка " + student3.avarageGradeCalculating(student3));
     }
 }
