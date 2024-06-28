@@ -1,9 +1,9 @@
 package org.example.lesson11;
 
 public class Student {
-    String name;
-    int course;
-    double garde;
+    public String name;
+    public int course;
+    public double garde;
 
     public Student(String name, int course, double garde) {
         this.name = name;

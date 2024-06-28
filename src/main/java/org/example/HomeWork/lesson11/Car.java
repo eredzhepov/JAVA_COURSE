@@ -6,9 +6,7 @@ public class Car {
    public String color;
    public String engine;
    public int doorCount;
-    public Car(){
 
-    }
     public Car(String color, String engine, int actualDoorCount) {
         this.color = color;
         this.engine = engine;
