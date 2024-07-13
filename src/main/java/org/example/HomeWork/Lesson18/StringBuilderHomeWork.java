@@ -1,4 +1,4 @@
-package org.example.HomeWork.Lesson17;
+package org.example.HomeWork.Lesson18;
 
 public class StringBuilderHomeWork {
     public static boolean ravenstvo(StringBuilder sb1, StringBuilder sb2) {
