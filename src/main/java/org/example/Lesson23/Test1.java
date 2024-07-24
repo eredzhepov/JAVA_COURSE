@@ -32,11 +32,20 @@ public class Test1 {
     }
     class Doctor extends Employee {
         String specialization;
-
+        void eat(){
+            System.out.println("Kushat doctor");
+        }
         void lechit() {
             System.out.println("Lechit");
         }
+
+        public static void main(String[] args) {
+            Employee e = new Doctor();
+            e.eat();
+        }
     }
+
+
     class Xirurg extends Doctor {
         String skalpel;
         public void operatia(){
